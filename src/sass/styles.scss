@@ -1,0 +1,141 @@
+@import url('http://fonts.cdnfonts.com/css/loyal-fame');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "vazir",'Loyal Fame', sans-serif;
+}
+body {
+  background: #0c202d;
+}
+.container {
+  height: 100%;
+  max-width: 100%;
+  padding: 5rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: inset 100px -100px 100px 100px rgba(255, 255, 255, 0.1);
+
+  .title {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Loyal Fame";
+    color: #fff;
+    padding: 0 0 5rem 0;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  form {
+    .form-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .form-control {
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid #cbcbcb;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 20px;
+        color: #fff;
+      }
+      .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+      .btn-search {
+        border: 0;
+        padding: 4px 3rem;
+        border-radius: 6px;
+        color: #000;
+        margin-left: 2rem;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+        background: #60dbe4;
+        letter-spacing: 1px;
+      }
+      .btn-search:hover {
+        opacity: 80%;
+      }
+    }
+  }
+
+  .headerDisplay {
+    text-align: center;
+    padding: 5rem 0 0 0;
+    color: #027cfd;
+    .header {
+      font-size: 2.5rem !important;
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      font-weight: 400;
+    }
+  }
+
+  .mainDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main,
+    .mainDetails {
+      color: #60dbe4;
+      letter-spacing: 3px;
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+
+  .temp-img {
+    text-align: center;
+    padding: 1rem;
+    .img {
+      width: 200px;
+      height: 200px;
+      color: #fff;
+    }
+  }
+
+  .tempDisplay {
+    text-align: center;
+    .temp {
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .min,
+    .max {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 1rem;
+      color: #fff;
+      font-size: 20px;
+    }
+    .maxTemp,
+    .minTemp {
+      padding: 7px 0;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+hr {
+  border: 1px solid silver;
+  height: 5rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 40%;
+  }
+}
