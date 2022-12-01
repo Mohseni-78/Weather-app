@@ -19,7 +19,7 @@ body {
   .title {
     text-align: center;
     font-size: 5rem;
-    font-family: "Loyal Fame";
+    font-family: "Loyal Fame" !important;
     color: #fff;
     padding: 0 0 5rem 0;
     font-weight: 700;
@@ -134,8 +134,17 @@ hr {
   height: 5rem;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 40%;
+    max-width: 90%;
+    .title{
+      font-size: 3rem;
+    }
+    form .form-group{
+      flex-direction: column;
+      .btn-search{
+        margin-top: 5rem;
+      }
+    }
   }
 }
